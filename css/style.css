@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Anton|Roboto|Fjalla+One&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.royalGymLogo{
+    width: 100px;
+}
+.nav-link{
+    font-size: 1.1em;
+}
+.row{
+    margin: 0;
+}
+#showcase{
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
+}
+#showcaseGym{
+    background-image: url('../images/bggym2.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+#showcaseFitman{
+    height: 60vh;
+    min-height: 500px;
+    background-image: url('../images/fitman.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: auto 100%;
+}
+#sloganContainer{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sloganBtn{
+    background-color:  #ff5733;
+    border: 1px solid #ff5733;
+    font-size: 1.4em;
+    color: #fff;
+    transition: all .3s;
+}
+.sloganBtn:hover{
+    background-color: #f17c62;
+    transform: translateY(-1px);
+    transition: all .3s;
+}
+#icons{
+    background-image: url('../images/groupworkout.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bg-transparentWhite{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.py-section{
+    padding: 100px 0px 50px 0px;
+}
+.bayLeavesImg{
+    max-width: 80px;
+}
+.bayLeavesReverse{
+    transform: scaleX(-1);
+}
+.font-anton{
+    font-family: 'Anton';
+}
+.font-abel{
+    font-family: 'Abel'
+}
+.font-roboto{
+    font-family: 'Roboto';
+}
+.font-fjallaone{
+    font-family: 'Fjalla One';
+}
+.bg-darkness{
+    background-color: rgb(19, 19, 19);
+}
+.bg-greenyellow{
+    background-color: greenyellow;
+}
+.bg-darkolivegreen{
+    background-color: darkolivegreen;
+}
+.bg-hotpink{
+    background-color: hotpink;
+}
+.bg-aquamarine{
+    background-color: aquamarine;
+}
+.bg-cornflowerblue{
+    background-color: cornflowerblue;
+}
+.bg-burlywood{
+    background-color: burlywood;
+}
+.bg-mediumpurple{
+    background-color: mediumpurple;
+}
+.bg-palegreen{
+    background-color: palegreen;
+}
+.bg-wheat{
+    background-color: wheat;
+}
+.bg-dodgerblue{
+    background-color: dodgerblue;
+}
+.bg-brown{
+    background-color: brown;
+}
+.sponsorImg{
+    width: 120px;
+    padding: 10px;
+}
+.customerImg{
+  max-width: 150px;
+}
+.gymEquipmentImg{
+    max-width: 250px;
+}
+.bg-orangered{
+    background-color: #ff5733;
+}
+.text-orangered{
+    color: #d44221; 
+}
+.bg-creamy{
+    background-color: #ebebeb;
+}
+.bg-silver{
+    background-color: #b8b8b8;
+}
+.bg-gray{
+    background-color: #343239;
+}
+.lg-gray{
+    background-color: #707070;
+}
+.carousel-indicators li{
+    background-color: #ff5733;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 100%;
+}
+#topQuote{
+    top: -20px;
+    left: -20px;
+}
+#bottomQuote{
+    bottom: -20px;
+    right: -20px;
+}
+.feedbackBtn{
+    display: none;
+}
+.collapseComment:not(.show){
+    display: block !important;
+}
+.nav-link{
+    font-size: 1.3em;
+    transition: all .3s;
+}
+.nav-link:hover{
+    transform: translateY(-1px);
+    transition: all .3s;
+}
+table td{
+    vertical-align: middle !important;
+    text-align: center;
+    padding: 1em;
+    border-right: 1px solid #343239;
+    border-bottom: 1px solid #343239;
+    z-index: 1;
+}
+table thead td{
+    position: sticky;
+    top: 0px;
+}
+table td:first-child{
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+table thead td:first-child{
+    z-index: 5;
+}
+table{
+    border-spacing: 0px;
+    border-collapse: separate;
+
+
+}
+
+@media only screen and (max-width: 1366px){
+    #slogan p{
+        font-size: 3.5em;
+    }
+    #slogan h2{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 1199px){
+    #showcaseFitman{
+        background-position-x: center;
+    }
+    #sloganContainer{
+        margin: auto;
+    }
+    #slogan{
+        text-align: center;
+    }
+    #slogan p{
+        font-size: 3.2em;
+    }
+    #slogan h2{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 767px){
+    .sectionTitle{
+        font-size: 2em;
+    }
+    .feedbackBtn{
+        display: inline-block;
+    }
+    .collapse:not(.show){
+        display: none !important; 
+    }
+    #smHours{
+        display: none;
+    }
+}
