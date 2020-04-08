@@ -14,7 +14,7 @@
       <i class="fas fa-map-marker-alt"></i><span class="ml-2">Elizabeth Avenue Rock Hill, SC 29730</span> 
     </span>
     <span id="smHours" class="mx-2">
-      <i class="fas fa-clock"></i><span class="ml-2">Mon - Sun: 05:00AM - 22:00PM</span> 
+      <i class="fas fa-clock"></i><span class="ml-2">Mon - Sun: 05:00AM - 10:00PM</span> 
     </span>
     <span id="smPhone" class="mx-2">
       <i class="fas fa-phone-alt"></i><span class="ml-2">+1 (202) 555 0128</span> 
@@ -50,25 +50,68 @@
         </div>
       </nav>
       <section id="timetable" class="py-section">
-          <div class="container">
-            <div class="overflow-auto">
-              <table class="">
+        <div class="container">
+          <div class="row">
+            <div class="col align-self-center">
+              <table class="table">
                 <thead>
                     <tr>
                       <td class="bg-gray text-light font-roboto">Time</td>
-                      <td class="bg-gray text-light font-roboto">Monday</td>
-                      <td class="bg-gray text-light font-roboto">Thuesday</td>
-                      <td class="bg-gray text-light font-roboto">Wednesday</td>
-                      <td class="bg-gray text-light font-roboto">Thursday</td>
-                      <td class="bg-gray text-light font-roboto">Friday</td>
-                      <td class="bg-gray text-light font-roboto">Saturday</td>
-                      <td class="bg-gray text-light font-roboto">Sunday</td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Monday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Thuesday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Wednesday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Thursday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Friday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Saturday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
+                      <td class="bg-gray text-light font-roboto">
+                        <div class="d-flex align-items-center">
+                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <span>Sunday</span>
+                          <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
+                        </div>
+                      </td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">5:30 AM</td>
-                      <td rowspan="2" class="bg-primary">Yoga</td>
+                      <td class="bg-gray text-light font-roboto">5:00 AM</td>
+                      <td rowspan="2" class="monday bg-primary">Yoga</td>
                       <td rowspan="2" class="bg-success">Healthy spine</td>
                       <td rowspan="2" class="bg-primary">Yoga</td>
                       <td rowspan="2" class="bg-success">Healthy spine</td>
@@ -78,6 +121,11 @@
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">6:00 AM</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-warning ">Tabata</td>
                       <td rowspan="2" class="bg-danger">Pilates</td>
                     </tr>
@@ -88,69 +136,103 @@
                       <td>&nbsp;</td>
                       <td rowspan="2" class="bg-danger">Pilates</td>
                       <td rowspan="2" class="bg-warning">Tabata</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">8:00 AM</td>
                       <td rowspan="2" class="bg-hotpink">Extra booty</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-hotpink">Extra booty</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-success">Healthy spine</td>
                       <td rowspan="2" class="bg-info">Abs blast</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">8:30 AM</td>
+                      <td class="bg-gray text-light font-roboto">9:00 AM</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-info">Abs blast</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-info">Abs blast</td>
                       <td>&nbsp;</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">9:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">10:00 AM</td>
                       <td rowspan="2" class="bg-aquamarine">Fit mom</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-cornflowerblue">Power pump</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-cornflowerblue">Power pump</td>
                       <td rowspan="2" class="bg-aquamarine">Fit mom</td>
                       <td rowspan="2" class="bg-greenyellow">Boxing fitness</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">10:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">11:00 AM</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-warning">Tabata</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-aquamarine">Fit mom</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">11:00 AM</td>
-                      <td rowspan="3"></td>
+                      <td class="bg-gray text-light font-roboto">12:00 PM</td>
+                      <td rowspan="3">&nbsp;</td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
                       <td rowspan="2" class="bg-darkolivegreen">Jumping fitness</td>
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">12:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">1:00 PM</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-aquamarine">Fit mom</td>
                       <td rowspan="2" class="bg-danger">Pilates</td>
                       <td rowspan="4">&nbsp;</td>
                       <td rowspan="2" class="bg-danger">Pilates</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-palegreen">Power bike</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">13:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">2:00 PM</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">14:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">3:00 PM</td>
                       <td rowspan="2" class="bg-orangered">Zumba</td>
                       <td>&nbsp;</td>
                       <td rowspan="2" class="bg-orangered">Zumba</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-burlywood">ABT</td>
                       <td rowspan="2" class="bg-wheat">Cross training</td>
                       <td rowspan="2" class="bg-wheat">Cross training</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">15:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">4:00 PM</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-burlywood">ABT</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">15:30 AM</td>
+                      <td class="bg-gray text-light font-roboto">5:00 PM</td>
                       <td rowspan="2" class="bg-mediumpurple">Fat burn</td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-mediumpurple">Fat burn</td>
                       <td rowspan="2" class="bg-hotpink">Extra booty</td>
                       <td rowspan="2" class="bg-mediumpurple">Fat burn</td>
@@ -158,57 +240,60 @@
                       <td rowspan="2" class="bg-burlywood">ABT</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">16:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">6:00 PM</td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-orangered">Zumba</td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">17:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">7:00 PM</td>
                       <td rowspan="2" class="bg-greenyellow">Boxing fitness</td>
                       <td rowspan="2" class="bg-wheat">Cross training</td>
                       <td rowspan="2" class="bg-greenyellow">Boxing fitness</td>
                       <td rowspan="2" class="bg-wheat">Cross training</td>
                       <td>&nbsp;</td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">18:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">8:00 PM</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td rowspan="2" class="bg-orangered">Zumba</td>
                       <td rowspan="2" class="bg-hotpink">Extra booty</td>
                       <td rowspan="2" class="bg-orangered">Zumba</td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">19:00 AM</td>
+                      <td class="bg-gray text-light font-roboto">9:00 PM</td>
                       <td rowspan="2" class="bg-info">Abs blast</td>
-                      <td rowspan="2" class="bg-brown">Streching</td>
+                      <td rowspan="2" class="bg-palegreen">Power bike</td>
                       <td rowspan="2" class="bg-info">Abs blast</td>
-                      <td rowspan="2" class="bg-brown">Streching</td>
+                      <td rowspan="2" class="bg-palegreen">Power bike</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                     </tr>
                     <tr>
-                      <td class="bg-gray text-light font-roboto">19:30 AM</td>
-                      <td rowspan="2" class="bg-info">Abs blast</td>
+                      <td class="bg-gray text-light font-roboto">10:00 PM</td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
+                      <td class="empty"></td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td class="bg-gray text-light font-roboto">20:00 AM</td>
-                      <td rowspan="2" class="bg-wheat">Cross training</td>
-                      <td rowspan="2" class="bg-darkolivegreen">Jumping fitness</td>
-                      <td rowspan="2" class="bg-palegreen">Power bike</td>
-                      <td rowspan="2" class="bg-darkolivegreen">Jumping fitness</td>
-                      <td rowspan="2" class="bg-palegreen">Power bike</td>
-                      <td rowspan="2" class="bg-darkolivegreen">Jumping fitness</td>
-                    </tr>
-                    <tr>
-                      <td class="bg-gray text-light font-roboto">21:00 AM</td>
                       <td>&nbsp;</td>
                     </tr>
                   </tbody>
               </table>
             </div>
-              
-          </div>
-            
+          </div> 
+        </div>
       </section>
 
 
@@ -265,5 +350,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
   </body>
 </html>

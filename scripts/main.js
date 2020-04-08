@@ -1,18 +1,19 @@
 $(document).ready(function(){
     $(window).scroll(testScroll);
-        var viewed = false;
 
-        function isScrolledIntoView(elem) {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
+    var viewed = false;
 
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
 
-            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        }
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
 
-        function testScroll() {
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    function testScroll() {
         if (isScrolledIntoView($(".numbers")) && !viewed) {
             viewed = true;
             $('.value').each(function (){
@@ -26,8 +27,10 @@ $(document).ready(function(){
                 }
             });
             });
-        }
+        }    
     }
+
+    
 
     // Animation on scroll configuration
     AOS.init({
