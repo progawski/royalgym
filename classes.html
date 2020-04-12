@@ -20,7 +20,7 @@
       <i class="fas fa-phone-alt"></i><span class="ml-2">+1 (202) 555 0128</span> 
     </span>
   </div>
-    <nav class="navbar navbar-expand-md navbar-light sticky-top bg-white px-md-5 px-3 border-bottom shadow">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top navbar-fixed-top bg-white px-md-5 px-3 border-bottom shadow">
         <a class="navbar-brand" href="#"><img class="royalGymLogo" src="images/royalgym.png" alt="Royal Gym Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -74,14 +74,14 @@
                       </td>
                       <td class="bg-gray text-light font-roboto">
                         <div class="d-flex align-items-center">
-                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <button class="btn btnPreviousDay py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
                           <span>Wednesday</span>
                           <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
                         </div>
                       </td>
                       <td class="bg-gray text-light font-roboto">
                         <div class="d-flex align-items-center">
-                          <button class="btn btnPreviousDay  py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
+                          <button class="btn btnPreviousDay py-0 my-0"><i class="fas fa-caret-left fa-2x text-light"></i></button>
                           <span>Thursday</span>
                           <button class="btn btnNextDay py-0 my-0"><i class="fas fa-caret-right fa-2x text-light"></i></button>
                         </div>
@@ -112,11 +112,11 @@
                   <tbody>
                     <tr>
                       <td class="bg-gray text-light font-roboto">5:00 AM</td>
-                      <td rowspan="2" data-toggle="modal" data-target="#modalClass" class="bg-dodgerblue font-abel text-light">Yoga</td>
-                      <td rowspan="2" class="bg-forestgreen font-abel text-light">Healthy spine</td>
-                      <td rowspan="2" class="bg-dodgerblue font-abel text-light">Yoga</td>
-                      <td rowspan="2" class="bg-forestgreen font-abel text-light">Healthy spine</td>
-                      <td rowspan="2" class="bg-dodgerblue font-abel text-light">Yoga</td>
+                      <td rowspan="2" data-class="yoga" class="classCell bg-dodgerblue font-abel text-light">Yoga</td>
+                      <td rowspan="2" data-class="healthySpine" class="classCell bg-forestgreen font-abel text-light">Healthy spine</td>
+                      <td rowspan="2" data-class="yoga" class="classCell bg-dodgerblue font-abel text-light">Yoga</td>
+                      <td rowspan="2" data-class="healthySpine" class="classCell bg-forestgreen font-abel text-light">Healthy spine</td>
+                      <td rowspan="2" data-class="yoga" class="classCell bg-dodgerblue font-abel text-light">Yoga</td>
                       <td class="nbsp">&nbsp;</td>
                       <td class="nbsp">&nbsp;</td>
                     </tr>
@@ -127,55 +127,55 @@
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-gold font-abel">Tabata</td>
-                      <td rowspan="2" class="bg-crimson font-abel text-light">Pilates</td>
+                      <td rowspan="2" data-class="tabata" class="classCell bg-gold font-abel">Tabata</td>
+                      <td rowspan="2" data-class="pilates" class="classCell bg-crimson font-abel text-light">Pilates</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">7:00 AM</td>
                       <td class="nbsp">&nbsp;</td>
-                      <td rowspan="2" class="bg-crimson font-abel text-light">Pilates</td>
+                      <td rowspan="2" data-class="pilates" class="classCell bg-crimson font-abel text-light">Pilates</td>
                       <td class="nbsp">&nbsp;</td>
-                      <td rowspan="2" class="bg-crimson font-abel text-light">Pilates</td>
-                      <td rowspan="2" class="bg-gold font-abel">Tabata</td>
+                      <td rowspan="2" data-class="pilates" class="classCell bg-crimson font-abel text-light">Pilates</td>
+                      <td rowspan="2" data-class="tabata" class="classCell bg-gold font-abel">Tabata</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
                     </tr>
                     <tr>
                       <td class="bg-gray font-abel text-light font-roboto">8:00 AM</td>
-                      <td rowspan="2" class="bg-hotpink font-abel">Extra booty</td>
+                      <td rowspan="2" data-class="powerBike" class="classCell bg-palegreen font-abel">Power bike</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-hotpink font-abel">Extra booty</td>
+                      <td rowspan="2" data-class="powerBike" class="classCell bg-palegreen font-abel">Power bike</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-forestgreen font-abel text-light">Healthy spine</td>
-                      <td rowspan="2" class="bg-mediumturquoise font-abel">Abs blast</td>
+                      <td rowspan="2" data-class="healthySpine" class="classCell bg-forestgreen font-abel text-light">Healthy spine</td>
+                      <td rowspan="2" data-class="absBlast" class="classCell bg-mediumturquoise font-abel">Abs blast</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">9:00 AM</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-mediumturquoise font-abel">Abs blast</td>
+                      <td rowspan="2" data-class="absBlast" class="classCell bg-mediumturquoise font-abel">Abs blast</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-mediumturquoise font-abel">Abs blast</td>
+                      <td rowspan="2" data-class="absBlast" class="classCell bg-mediumturquoise font-abel">Abs blast</td>
                       <td class="nbsp">&nbsp;</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">10:00 AM</td>
-                      <td rowspan="2" class="bg-cyan font-abel">Fit mom</td>
+                      <td rowspan="2" data-class="fitFamily" class="classCell bg-cyan font-abel">Fit family</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-cornflowerblue font-abel text-light">Power pump</td>
+                      <td rowspan="2" data-class="powerPump" class="classCell bg-cornflowerblue font-abel text-light">Power pump</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-cornflowerblue font-abel text-light">Power pump</td>
-                      <td rowspan="2" class="bg-cyan font-abel">Fit mom</td>
-                      <td rowspan="2" class="bg-greenyellow font-abel">Boxing fitness</td>
+                      <td rowspan="2" data-class="powerPump" class="classCell bg-cornflowerblue font-abel text-light">Power pump</td>
+                      <td rowspan="2" data-class="fitFamily" class="classCell bg-cyan font-abel">Fit family</td>
+                      <td rowspan="2" data-class="boxingFitness" class="classCell bg-greenyellow font-abel">Boxing fitness</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">11:00 AM</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-gold font-abel">Tabata</td>
+                      <td rowspan="2" data-class="tabata" class="classCell bg-gold font-abel">Tabata</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-cyan font-abel">Fit mom</td>
+                      <td rowspan="2" data-class="fitFamily" class="classCell bg-cyan font-abel">Fit family</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
@@ -187,18 +187,18 @@
                       <td class="nbsp">&nbsp;</td>
                       <td class="empty"></td>
                       <td class="nbsp">&nbsp;</td>
-                      <td rowspan="2" class="bg-darkolivegreen font-abel text-light">Jumping fitness</td>
+                      <td rowspan="2" data-class="jumpingFitness" class="classCell bg-darkolivegreen font-abel text-light">Jumping fitness</td>
                       <td class="nbsp">&nbsp;</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">1:00 PM</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-cyan font-abel">Fit mom</td>
-                      <td rowspan="2" class="bg-crimson font-abel text-light">Pilates</td>
+                      <td rowspan="2" data-class="fitFamily" class="classCell bg-cyan font-abel">Fit family</td>
+                      <td rowspan="2" data-class="pilates" class="classCell bg-crimson font-abel text-light">Pilates</td>
                       <td rowspan="4">&nbsp;</td>
-                      <td rowspan="2" class="bg-crimson font-abel text-light">Pilates</td>
+                      <td rowspan="2" data-class="pilates" class="classCell bg-crimson font-abel text-light">Pilates</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-palegreen font-abel">Power bike</td>
+                      <td rowspan="2" data-class="powerBike" class="classCell bg-palegreen font-abel">Power bike</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">2:00 PM</td>
@@ -212,18 +212,18 @@
                     </tr>
                     <tr>
                       <td class="bg-gray font-abel text-light font-roboto">3:00 PM</td>
-                      <td rowspan="2" class="bg-orangered font-abel text-light">Zumba</td>
+                      <td rowspan="2" data-class="zumba" class="classCell bg-orangered font-abel text-light">Zumba</td>
                       <td class="nbsp">&nbsp;</td>
-                      <td rowspan="2" class="bg-orangered font-abel text-light">Zumba</td>
+                      <td rowspan="2" data-class="zumba" class="classCell bg-orangered font-abel text-light">Zumba</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-burlywood font-abel">ABT</td>
-                      <td rowspan="2" class="bg-wheat font-abel">Cross training</td>
-                      <td rowspan="2" class="bg-wheat font-abel">Cross training</td>
+                      <td rowspan="2" data-class="abt" class="classCell bg-burlywood font-abel">ABT</td>
+                      <td rowspan="2" data-class="crossTraining" class="classCell bg-wheat font-abel">Cross training</td>
+                      <td rowspan="2" data-class="crossTraining" class="classCell bg-wheat font-abel">Cross training</td>
                     </tr>
                     <tr>
                       <td class="bg-gray font-abel text-light font-roboto">4:00 PM</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-burlywood font-abel">ABT</td>
+                      <td rowspan="2" data-class="abt" class="classCell bg-burlywood font-abel">ABT</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
@@ -232,13 +232,13 @@
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">5:00 PM</td>
-                      <td rowspan="2" class="bg-mediumpurple font-abel text-light">Fat burn</td>
+                      <td rowspan="2" data-class="fitBall" class="classCell bg-mediumpurple font-abel text-light">Fit ball</td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-mediumpurple font-abel text-light">Fat burn</td>
-                      <td rowspan="2" class="bg-hotpink font-abel">Extra booty</td>
-                      <td rowspan="2" class="bg-mediumpurple font-abel text-light">Fat burn</td>
+                      <td rowspan="2" data-class="fitBall" class="classCell bg-mediumpurple font-abel text-light">Fit ball</td>
+                      <td rowspan="2" data-class="jumpingFitness" class="classCell bg-darkolivegreen font-abel text-light">Jumping fitness</td>
+                      <td rowspan="2" data-class="fitBall" class="classCell bg-mediumpurple font-abel text-light">Fit ball</td>
                       <td class="nbsp">&nbsp;</td>
-                      <td rowspan="2" class="bg-burlywood font-abel">ABT</td>
+                      <td rowspan="2" data-class="abt" class="classCell bg-burlywood font-abel">ABT</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">6:00 PM</td>
@@ -247,15 +247,15 @@
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-orangered font-abel text-light">Zumba</td>
+                      <td rowspan="2" data-class="zumba" class="classCell bg-orangered font-abel text-light">Zumba</td>
                       <td class="empty"></td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">7:00 PM</td>
-                      <td rowspan="2" class="bg-greenyellow font-abel">Boxing fitness</td>
-                      <td rowspan="2" class="bg-wheat font-abel">Cross training</td>
-                      <td rowspan="2" class="bg-greenyellow font-abel">Boxing fitness</td>
-                      <td rowspan="2" class="bg-wheat font-abel">Cross training</td>
+                      <td rowspan="2" data-class="boxingFitness" class="classCell bg-greenyellow font-abel">Boxing fitness</td>
+                      <td rowspan="2" data-class="crossTraining" class="classCell bg-wheat font-abel">Cross training</td>
+                      <td rowspan="2" data-class="boxingFitness" class="classCell bg-greenyellow font-abel">Boxing fitness</td>
+                      <td rowspan="2" data-class="crossTraining" class="classCell bg-wheat font-abel">Cross training</td>
                       <td class="nbsp">&nbsp;</td>
                       <td class="empty"></td>
                       <td class="nbsp">&nbsp;</td>
@@ -266,16 +266,16 @@
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
-                      <td rowspan="2" class="bg-orangered font-abel text-light">Zumba</td>
-                      <td rowspan="2" class="bg-hotpink font-abel">Extra booty</td>
-                      <td rowspan="2" class="bg-orangered font-abel text-light">Zumba</td>
+                      <td rowspan="2" data-class="zumba" class="classCell bg-orangered font-abel text-light">Zumba</td>
+                      <td rowspan="2" data-class="boxingFitness" class="classCell bg-greenyellow font-abel">Boxing fitnes</td>
+                      <td rowspan="2" data-class="zumba" class="classCell bg-orangered font-abel text-light">Zumba</td>
                     </tr>
                     <tr>
                       <td class="bg-gray text-light font-roboto">9:00 PM</td>
-                      <td rowspan="2" class="bg-mediumturquoise font-abel">Abs blast</td>
-                      <td rowspan="2" class="bg-palegreen font-abel">Power bike</td>
-                      <td rowspan="2" class="bg-mediumturquoise font-abel">Abs blast</td>
-                      <td rowspan="2" class="bg-palegreen font-abel">Power bike</td>
+                      <td rowspan="2" data-class="absBlast" class="classCell bg-mediumturquoise font-abel">Abs blast</td>
+                      <td rowspan="2" data-class="powerBike" class="classCell bg-palegreen font-abel">Power bike</td>
+                      <td rowspan="2" data-class="absBlast" class="classCell bg-mediumturquoise font-abel">Abs blast</td>
+                      <td rowspan="2" data-class="powerBike" class="classCell bg-palegreen font-abel">Power bike</td>
                       <td class="empty"></td>
                       <td class="empty"></td>
                       <td class="empty"></td>
@@ -300,27 +300,23 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title mx-auto" id="modalClassTitle">YOGA</h5>
+                <h3 id="className" class="modal-title mx-auto font-fjallaone"></h3>
               </div>
-              <div class="modal-body text-center">
-                  <div>
-                    
-                  </div>
-                  <img src="images/barbell.png" width="300px" class="img-fluid m-4">
-                
+              <div class="modal-body text-center p-4">
+                <img id="classImage" height="100" class="img-fluid mb-4">
                 <div class="text-left mt-2">
-                  <h5>Type of training:</h5> 
-                  <p>The class involves working with the body, respiration and the mind. It leads to harmony and internal balance.</p>
-                  <h5>Equipment used:</h5>
-                  <p>blankets, rollers, blocks, yoga belts, chairs.</p>
-                  <h5>Benefits:</h5>
-                  <p>body shaping, improvement in well-being and health, reduction of stress.</p>
-                  <h5>Coach:</h5>
-                  <p>John Simonson</p>
+                  <h5 class="font-roboto">Type of training</h5> 
+                  <p id="classType" class="classDescription"></p>
+                  <h5 class="font-roboto">Equipment used</h5>
+                  <p id="classEquipment" class="classDescription"></p>
+                  <h5 class="font-roboto">Benefits</h5>
+                  <p id="classBenefits" class="classDescription"></p>
+                  <h5 class="font-roboto">Coach</h5>
+                  <p id="classCoach" class="classDescription"></p>
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn bg-orangered text-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -378,6 +374,7 @@
 
     <script src="https://kit.fontawesome.com/62f0cbd933.js" crossorigin="anonymous"></script>
     <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/angular.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
