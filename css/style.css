@@ -61,6 +61,9 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
 .py-section{
     padding: 100px 0px 50px 0px;
 }
+.py-section-100{
+    padding: 100px 0px 100px 0px;
+}
 .bayLeavesImg{
     max-width: 80px;
 }
@@ -243,16 +246,20 @@ table tbody td:not(:first-child){
     font-size: 1.1em;
     transition: all .2s;
 }
-table tbody td:not(.nbsp){
+table tbody td:not(.nbsp):not(:first-child){
     cursor: pointer;
     transition: all .2s;
 }
 table{
     border-spacing: 0px;
     border-collapse: separate;
+    box-shadow: 5px 5px 100px 50px rgba(255, 255, 255, 0.788);
 }
 table div{
     justify-content: center;
+}
+.bg-transparent{
+    background-color: transparent;
 }
 .empty{
     display: none;
@@ -273,6 +280,18 @@ table div{
 }
 .modal-backdrop{
     overflow-y: scroll;
+}
+#timetable{
+    background-image: url('/images/classesbg.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+}
+#offers{
+    background-image: url('/images/bggym.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 @media only screen and (max-width: 1366px){
     #slogan p{
@@ -302,6 +321,9 @@ table div{
 @media only screen and (min-width: 768px){
     table td:not(.empty){
         display: table-cell !important;
+    }
+    .card-container{
+        max-width: 310px;
     }
 }
 @media only screen and (max-width: 767px){

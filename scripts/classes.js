@@ -1,14 +1,3 @@
-
-
-// var app = angular.module('app', []);
-// app.controller('classesCtrl', function($scope){
-//     $scope.classCell = classCell;
-//     $scope.classes = classes;
-//     //$scope.classCell = 1;
-
- 
-// });
-
 $(document).ready(function(){
     var dayOfWeek;
     $('.btnPreviousDay').click(function(){
