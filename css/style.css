@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Anton|Roboto|Fjalla+One&display=swap');
-
+/* asd */
 html, body{
     margin: 0;
     padding: 0;
@@ -194,11 +194,11 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
 .bg-silver{
     background-color: #b8b8b8;
 }
+.text-silver{
+    color: #b8b8b8;
+}
 .bg-gray{
     background-color: #343239;
-}
-.lg-gray{
-    background-color: #707070;
 }
 .carousel-indicators li{
     background-color: #ff5733;
@@ -293,18 +293,28 @@ table div{
     background-position: center;
     background-attachment: fixed;
 }
+#contact{
+    background-image: url('/images/ropes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 .map-responsive{
     overflow:hidden;
-    padding-bottom:50%;
     position:relative;
-    height:600px;
+    height:100%;
+    min-height: 500px;
+    z-index: 2;
 }
 .map-responsive iframe{
     left:0;
     top:0;
-    height:80%;
+    height:100%;
     width:100%;
     position:absolute;
+}
+.white-light{
+    box-shadow: 5px 5px 100px 50px rgba(255, 255, 255, 0.788);
 }
 @media only screen and (max-width: 1366px){
     #slogan p{
