@@ -30,14 +30,6 @@ $(document).ready(function(){
         }    
     }
 
-    
-
-    // Animation on scroll configuration
-    AOS.init({
-        once: true,
-        duration: 500
-    }); 
-
     // Carousel
     $('.carousel').carousel({
         interval: 8000

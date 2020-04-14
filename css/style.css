@@ -293,6 +293,19 @@ table div{
     background-position: center;
     background-attachment: fixed;
 }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:600px;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+}
 @media only screen and (max-width: 1366px){
     #slogan p{
         font-size: 3.5em;
@@ -356,5 +369,8 @@ table div{
     }
     table tbody td{
         height: 65px;
+    }
+    .contact-col{
+        border-right: none !important;
     }
 }

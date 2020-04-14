@@ -23,12 +23,6 @@ $(document).ready(function(){
         $('table td:nth-child('+dayOfWeek+'):not(.empty)').show();
     });
 
-    // Animation on scroll configuration
-    AOS.init({
-        once: true,
-        duration: 500
-    }); 
-
     var classes = 
     {
                 yoga: 
