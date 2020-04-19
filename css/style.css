@@ -323,6 +323,26 @@ table div{
     background-attachment: fixed;
     background-size: cover;
 }
+.gallery-link{
+    cursor: pointer;
+}
+.btnPreviousImage, .btnNextImage{
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.btnPreviousImage{
+    left: 15px;
+}
+.btnNextImage{
+    right: 15px;
+}
+.btn:focus {
+    box-shadow: none;
+}
+#modalGallery{
+    padding-right: 0px !important;
+}
 @media only screen and (max-width: 1366px){
     #slogan p{
         font-size: 3.5em;
