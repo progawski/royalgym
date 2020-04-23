@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(window).scroll(testScroll);
+    $(window).scroll(countOnScroll);
 
     var viewed = false;
 
@@ -13,7 +13,8 @@ $(document).ready(function(){
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-    function testScroll() {
+    // Start counting 
+    function countOnScroll() {
         if (isScrolledIntoView($(".numbers")) && !viewed) {
             viewed = true;
             $('.value').each(function (){
@@ -30,11 +31,7 @@ $(document).ready(function(){
         }    
     }
 
-    // Carousel
-    $('.carousel').carousel({
-        interval: 8000
-    })
-
+    // Toggle text of feedback button on click
     $('.feedbackBtn').click(function(){
         if($(this).text() == 'Read more...'){
             $(this).text('Hide comment');

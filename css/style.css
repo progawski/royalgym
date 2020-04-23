@@ -1,75 +1,7 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Abel|Anton|Roboto|Fjalla+One&display=swap');
-/* asd */
-html, body{
-    margin: 0;
-    padding: 0;
-}
-.royalGymLogo{
-    width: 100px;
-}
-.nav-link{
-    font-size: 1.1em;
-}
-.row{
-    margin: 0;
-}
-#showcase{
-background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
-}
-#showcaseGym{
-    background-image: url('../images/bggym2.png');
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: center;
-    background-attachment: fixed;
-}
-#showcaseFitman{
-    height: 60vh;
-    min-height: 500px;
-    background-image: url('../images/fitman.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: auto 100%;
-}
-#sloganContainer{
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.sloganBtn{
-    background-color:  #ff5733;
-    border: 1px solid #ff5733;
-    font-size: 1.4em;
-    color: #fff;
-    transition: all .3s;
-}
-.sloganBtn:hover{
-    background-color: #f17c62;
-    transform: translateY(-1px);
-    transition: all .3s;
-}
-#icons{
-    background-image: url('../images/groupworkout.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.bg-transparentWhite{
-    background-color: rgba(255, 255, 255, 0.5);
-}
-.py-section{
-    padding: 100px 0px 50px 0px;
-}
-.py-section-100{
-    padding: 100px 0px 100px 0px;
-}
-.bayLeavesImg{
-    max-width: 80px;
-}
-.bayLeavesReverse{
-    transform: scaleX(-1);
-}
+
 .font-anton{
     font-family: 'Anton';
 }
@@ -82,6 +14,34 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
 .font-fjallaone{
     font-family: 'Fjalla One';
 }
+
+/* General settings */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.py-section{
+    padding: 100px 0px 50px 0px;
+}
+.py-section-100{
+    padding: 100px 0px 100px 0px;
+}
+.btn:focus {
+    box-shadow: none;
+}
+td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
+    background-color: rgb(207, 73, 43);
+}
+.modal-backdrop{
+    overflow-y: scroll;
+}
+
+/* Custom backgrounds */
+
 .bg-darkness{
     background-color: rgb(19, 19, 19);
 }
@@ -148,8 +108,8 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
 .bg-orangered{
     background-color: #ff5733;
 }
-td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
-    background-color: rgb(207, 73, 43);
+.bg-transparentWhite{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .bg-forestgreen{
     background-color: forestgreen;
@@ -175,50 +135,38 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
 .bg-gold:hover{
     background-color: rgb(228, 195, 7);
 }
-.sponsorImg{
-    width: 120px;
-    padding: 10px;
-}
-.customerImg{
-  max-width: 150px;
-}
-.gymEquipmentImg{
-    max-width: 250px;
-}
-.text-orangered{
-    color: #d44221; 
-}
 .bg-creamy{
     background-color: #ebebeb;
 }
 .bg-silver{
     background-color: #b8b8b8;
 }
-.text-silver{
-    color: #b8b8b8;
-}
 .bg-gray{
     background-color: #343239;
 }
-.carousel-indicators li{
-    background-color: #ff5733;
+.bg-transparent{
+    background-color: transparent;
 }
-.carousel-control-next, .carousel-control-prev{
-    width: 100%;
+
+/* Custom text colors */
+
+.text-orangered{
+    color: #d44221; 
 }
-#topQuote{
-    top: -20px;
-    left: -20px;
+.text-silver{
+    color: #b8b8b8;
 }
-#bottomQuote{
-    bottom: -20px;
-    right: -20px;
+
+/* Custom effects */
+
+.white-light{
+    box-shadow: 5px 5px 100px 50px rgba(255, 255, 255, 0.788);
 }
-.feedbackBtn{
-    display: none;
-}
-.collapseComment:not(.show){
-    display: block !important;
+
+/* Navigation */
+
+.royalGymLogo{
+    width: 100px;
 }
 .nav-link{
     font-size: 1.3em;
@@ -228,6 +176,77 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
     transform: translateY(-1px);
     transition: all .3s;
 }
+.navbar{
+    margin-right: 0 !important;
+}
+
+/* Home */
+
+#showcase{
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
+}
+#showcaseGym{
+    background-image: url('../images/bggym2.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+#showcaseFitman{
+    height: 60vh;
+    min-height: 500px;
+    background-image: url('../images/fitman.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: auto 100%;
+}
+#sloganContainer{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sloganBtn{
+    background-color:  #ff5733;
+    border: 1px solid #ff5733;
+    font-size: 1.4em;
+    color: #fff;
+    transition: all .3s;
+}
+.sloganBtn:hover{
+    background-color: #f17c62;
+    transform: translateY(-1px);
+    transition: all .3s;
+}
+#icons{
+    background-image: url('../images/groupworkout.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.customerImg{
+    max-width: 150px;
+}
+#topQuote{
+    top: -20px;
+    left: -20px;
+}
+#bottomQuote{
+    bottom: -20px;
+    right: -20px;
+}
+.gymEquipmentImg{
+    max-width: 250px;
+}
+.feedbackBtn{
+    display: none;
+}
+.collapseComment:not(.show){
+    display: block !important;
+}
+
+/* Classes */
+
 table{
     background-color: black;
 }
@@ -258,9 +277,6 @@ table{
 table div{
     justify-content: center;
 }
-.bg-transparent{
-    background-color: transparent;
-}
 .empty{
     display: none;
 }
@@ -270,16 +286,9 @@ table div{
 .classImg{
     max-width: 250px;
 }
-
 .classDescription{
     font-family: 'Abel';
     font-size: 1.2em;
-}
-.navbar{
-    margin-right: 0 !important;
-}
-.modal-backdrop{
-    overflow-y: scroll;
 }
 #timetable{
     background-image: url('/images/classesbg.png');
@@ -287,18 +296,18 @@ table div{
     background-position: 0 0;
     background-attachment: fixed;
 }
+
+/* Offers */
+
 #offers{
     background-image: url('/images/bggym.png');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
-#contact{
-    background-image: url('/images/ropes.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+
+/* Contact - google map */
+
 .map-responsive{
     overflow:hidden;
     position:relative;
@@ -313,9 +322,15 @@ table div{
     width:100%;
     position:absolute;
 }
-.white-light{
-    box-shadow: 5px 5px 100px 50px rgba(255, 255, 255, 0.788);
+#contact{
+    background-image: url('/images/ropes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+/* Team */
+
 #team{
     background-image: url('/images/bggym3.jpg');
     background-repeat: no-repeat;
@@ -323,6 +338,9 @@ table div{
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* Gallery */
+
 .gallery-link{
     cursor: pointer;
 }
@@ -337,12 +355,40 @@ table div{
 .btnNextImage{
     right: 15px;
 }
-.btn:focus {
-    box-shadow: none;
+.btnCloseImage{
+    z-index: 3;
+    right: 15px;
 }
-#modalGallery{
-    padding-right: 0px !important;
+
+/* Footer */
+
+footer{
+    position: sticky;
 }
+.societyIcon{
+    cursor: pointer;
+    transition: all .3s;
+    color: #fff;
+}
+.societyIcon:hover{
+    transform: translateY(-2px);
+    transition: all .3s;
+    color: orangered;
+}
+.benefitImg{
+    width: 180px;
+    padding: 10px;
+    transition: all .3s;
+
+}
+.benefitImg:hover{
+    transform: translateY(-2px);
+    transition: all .3s;
+    background-color: orangered;
+}
+
+/* Media queries */
+
 @media only screen and (max-width: 1366px){
     #slogan p{
         font-size: 3.5em;
