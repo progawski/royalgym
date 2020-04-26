@@ -4,18 +4,22 @@ $(document).ready(function(){
     var viewed = false;
 
     function isScrolledIntoView(elem) {
+        // Distance between the top of the view and the top of the page
         var docViewTop = $(window).scrollTop();
+         // Distance between the bottom of the view and the top of the page
         var docViewBottom = docViewTop + $(window).height();
-
+        // Distance between the top of the element and the top of the page
         var elemTop = $(elem).offset().top;
+        // Distance between the bottom of the element and the top of the page
         var elemBottom = elemTop + $(elem).height();
-
+        // Return TRUE if element is in view
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-    // Start counting 
+    // Start counting animation of each value if it is in view
     function countOnScroll() {
         if (isScrolledIntoView($(".numbers")) && !viewed) {
+            // Set viewed to TRUE so it is only counted once
             viewed = true;
             $('.value').each(function (){
             $(this).prop('Counter',0).animate({

@@ -158,59 +158,6 @@ $(document).ready(function(){
         }
     }
 
-    // Function responsible for darken cell background on hover
-    function LightenDarkenColor(col, amt) {
-    
-        var usePound = false;
-    
-        if (col[0] == "#") {
-            col = col.slice(1);
-            usePound = true;
-        }
-    
-        var num = parseInt(col,16);
-        var r = (num >> 16) + amt;
-    
-        if (r > 255){
-            r = 255;
-        }
-        else if (r < 0){
-            r = 0;
-        }
-    
-        var b = ((num >> 8) & 0x00FF) + amt;
-    
-        if (b > 255){
-            b = 255;
-        }
-        else if (b < 0){
-            b = 0;
-        }
-
-        var g = (num & 0x0000FF) + amt;
-    
-        if(g > 255){
-            g = 255;
-        }
-        else if(g < 0){
-            g = 0;
-        }
-        return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
-    
-    }
-
-    var hexDigits = new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"); 
-
-    function hex(x) {
-        return isNaN(x) ? "00" : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
-    }
-
-    // Function to convert rgb color to hex format
-    function rgb2hex(rgb) {
-        rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-        return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-    }
-
     //Replace modal content depending on chosen class
 
     var classCell = "";
@@ -226,18 +173,10 @@ $(document).ready(function(){
         $('#classBenefits').text(classes[classCell]["Benefits"]);
         $('#classCoach').text(classes[classCell]["Coach"]);
 
-        $('.modal-header').css('background-color', $(this).css('background-color'));
-        $('.modal-footer button').css({
-            'background-color': $(this).css('background-color'),
-            'color': $(this).css('color')
-        });
-        $('.modal-footer button').hover(function(){   
-            //OnHover 
-            $( this ).css("background-color", LightenDarkenColor(rgb2hex($( this ).css("background-color")), -20)); 
-          }, function() {    
-            //AfterHover
-            $( this ).css("background-color", LightenDarkenColor(rgb2hex($( this ).css("background-color")), 20)); 
-          });
+        $('.modal-header').attr('class', 'modal-header bg-' + classCell);
+        $('.modal-footer button').attr('class', 'btn bg-' + classCell);
+        $('.modal-footer button').css('color', $(this).css('color'));
+
         $('#modalClass').modal();
     });
 

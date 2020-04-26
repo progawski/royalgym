@@ -1,0 +1,28 @@
+$backgrounds: (
+    greenyellow: #adff2f
+    // darkolivegreen: darkolivegreen,
+    // hotpink: hotpink,
+    // cyan: cyan,
+    // cornflowerblue: cornflowerblue,
+    // burlywood: burlywood,
+    // mediumpurple: mediumpurple,
+    // palegreen: palegreen,
+    // wheat: wheat,
+    // dodgerblue: dodgerblue,
+    // forestgreen: forestgreen,
+    // crimson: crimson,
+    // mediumturquoise: mediumturquoise,
+    // gold: gold
+);
+
+
+@mixin customBackgrounds{
+    @each $asd in $backgrounds{
+        .bg-#{$asd}{
+            background-color: $asd;
+        }
+        .bg-#{$asd}:hover{
+            background-color: darken($color: $asd, $amount: 30);
+        }
+    }
+}

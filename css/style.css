@@ -45,95 +45,11 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
 .bg-darkness{
     background-color: rgb(19, 19, 19);
 }
-.bg-greenyellow{
-    background-color: greenyellow;
-}
-.bg-greenyellow:hover{
-    background-color: rgb(145, 216, 39);
-}
-.bg-darkolivegreen{
-    background-color: darkolivegreen;
-}
-.bg-darkolivegreen:hover{
-    background-color: rgb(66, 83, 36);
-}
-.bg-hotpink{
-    background-color: hotpink;
-}
-.bg-hotpink:hover{
-    background-color: rgb(224, 93, 159);
-}
-.bg-cyan{
-    background-color: cyan;
-}
-.bg-cyan:hover{
-    background-color: rgb(5, 223, 223);
-}
-.bg-cornflowerblue{
-    background-color: cornflowerblue;
-}
-.bg-cornflowerblue:hover{
-    background-color: rgb(81, 122, 199);
-}
-.bg-burlywood{
-    background-color: burlywood;
-}
-.bg-burlywood:hover{
-    background-color: rgb(190, 159, 119);
-}
-.bg-mediumpurple{
-    background-color: mediumpurple;
-}
-.bg-mediumpurple:hover{
-    background-color: rgb(118, 91, 173);
-}
-.bg-palegreen{
-    background-color: palegreen;
-}
-.bg-palegreen:hover{
-    background-color: rgb(121, 196, 121);
-}
-.bg-wheat{
-    background-color: wheat;
-}
-.bg-wheat:hover{
-    background-color: rgb(214, 195, 159);
-}
-.bg-dodgerblue{
-    background-color: dodgerblue;
-}
-.bg-dodgerblue:hover{
-    background-color: rgb(24, 115, 207);
-}
 .bg-orangered{
     background-color: #ff5733;
 }
 .bg-transparentWhite{
     background-color: rgba(255, 255, 255, 0.5);
-}
-.bg-forestgreen{
-    background-color: forestgreen;
-}
-.bg-forestgreen:hover{
-    background-color: rgb(28, 114, 28);
-}
-.bg-crimson{
-    background-color: crimson;
-}
-.bg-crimson:hover{
-    background-color: rgb(182, 18, 51);
-}
-.bg-mediumturquoise{
-    background-color: mediumturquoise;
-}
-.bg-mediumturquoise:hover{
-    background-color: rgb(64, 189, 185);
-}
-.bg-gold{
-    background-color: gold;
-}
-.bg-gold:hover{
-    background-color: rgb(228, 195, 7);
 }
 .bg-creamy{
     background-color: #ebebeb;
@@ -147,6 +63,100 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
 .bg-transparent{
     background-color: transparent;
 }
+
+/* Custom classes backgrounds */
+
+.bg-zumba{
+    background-color: #ff5733;
+}
+.bg-zumba:hover{
+    background-color: hsl(11, 100%, 55%);
+}
+.bg-boxingFitness{
+    background-color: greenyellow;
+}
+.bg-boxingFitness:hover{
+    background-color: #adff2f;
+}
+.bg-jumpingFitness{
+    background-color: darkolivegreen;
+}
+.bg-jumpingFitness:hover{
+    background-color: rgb(66, 83, 36);
+}
+.bg-hotpink{
+    background-color: hotpink;
+}
+.bg-hotpink:hover{
+    background-color: rgb(224, 93, 159);
+}
+.bg-fitFamily{
+    background-color: cyan;
+}
+.bg-fitFamily:hover{
+    background-color: rgb(5, 223, 223);
+}
+.bg-powerPump{
+    background-color: cornflowerblue;
+}
+.bg-powerPump:hover{
+    background-color: rgb(81, 122, 199);
+}
+.bg-abt{
+    background-color: burlywood;
+}
+.bg-abt:hover{
+    background-color: rgb(190, 159, 119);
+}
+.bg-mediumpurple{
+    background-color: mediumpurple;
+}
+.bg-mediumpurple:hover{
+    background-color: rgb(118, 91, 173);
+}
+.bg-powerBike{
+    background-color: palegreen;
+}
+.bg-powerBike:hover{
+    background-color: rgb(121, 196, 121);
+}
+.bg-crossTraining{
+    background-color: wheat;
+}
+.bg-crossTraining:hover{
+    background-color: rgb(214, 195, 159);
+}
+.bg-yoga{
+    background-color: dodgerblue;
+}
+.bg-yoga:hover{
+    background-color: rgb(24, 115, 207);
+}
+.bg-healthySpine{
+    background-color: forestgreen;
+}
+.bg-healthySpine:hover{
+    background-color: rgb(28, 114, 28);
+}
+.bg-pilates{
+    background-color: crimson;
+}
+.bg-pilates:hover{
+    background-color: rgb(182, 18, 51);
+}
+.bg-absBlast{
+    background-color: mediumturquoise;
+}
+.bg-absBlast:hover{
+    background-color: rgb(64, 189, 185);
+}
+.bg-tabata{
+    background-color: gold;
+}
+.bg-tabata:hover{
+    background-color: rgb(228, 195, 7);
+}
+
 
 /* Custom text colors */
 
@@ -229,11 +239,11 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
 }
 #topQuote{
     top: -20px;
-    left: -20px;
+    left: 0px;
 }
 #bottomQuote{
     bottom: -20px;
-    right: -20px;
+    right: 0px;
 }
 .gymEquipmentImg{
     max-width: 250px;
@@ -376,17 +386,39 @@ footer{
     color: orangered;
 }
 .benefitImg{
-    width: 180px;
-    padding: 10px;
+    display: inline-block;
     transition: all .3s;
-
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .benefitImg:hover{
     transform: translateY(-2px);
     transition: all .3s;
-    background-color: orangered;
 }
-
+#multisportImg{
+    width: 160px;
+    height: 36px;
+    background-image: url('/images/multisport.png');
+}
+#multisportImg:hover{
+    background-image: url('/images/multisport-orange.png');
+}
+#benefitSystemsImg{
+    width: 160px;
+    height: 39px;
+    background-image: url('/images/benefitsystem.png')
+}
+#benefitSystemsImg:hover{
+    background-image: url('/images/benefitsystem-orange.png');
+}
+#okSystemImg{
+    width: 160px;
+    height: 34px;
+    background-image: url('/images/oksystem.png');
+}
+#okSystemImg:hover{
+    background-image: url('/images/oksystem-orange.png');
+}
 /* Media queries */
 
 @media only screen and (max-width: 1366px){
