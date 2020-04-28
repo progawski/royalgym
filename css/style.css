@@ -21,6 +21,13 @@ html, body{
     margin: 0;
     padding: 0;
 }
+body{
+    max-width: 1920px;
+}
+body:after{  /* It prevents "blinking effect" on first hover */
+    display: none;
+    content: url(/images/multisport-orange.png), url(/images/oksystem-orange.png), url(/images/benefitsystem-orange.png);
+   }
 .row{
     margin: 0;
 }
@@ -39,7 +46,9 @@ td.bg-orangered:hover, a.bg-orangered:hover, button.bg-orangered:hover{
 .modal-backdrop{
     overflow-y: scroll;
 }
-
+a:hover{
+    text-decoration: none;
+}
 /* Custom backgrounds */
 
 .bg-darkness{
@@ -199,9 +208,10 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
 #showcaseGym{
     background-image: url('../images/bggym2.png');
     background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: center;
+    background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+    max-height: 1080px;
 }
 #showcaseFitman{
     height: 60vh;
@@ -211,21 +221,10 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(215,215,215,1) 100%);
     background-position-x: right;
     background-position-y: bottom;
     background-size: auto 100%;
+    max-height: 1080px;
 }
 #sloganContainer{
     background-color: rgba(255, 255, 255, 0.8);
-}
-.sloganBtn{
-    background-color:  #ff5733;
-    border: 1px solid #ff5733;
-    font-size: 1.4em;
-    color: #fff;
-    transition: all .3s;
-}
-.sloganBtn:hover{
-    background-color: #f17c62;
-    transform: translateY(-1px);
-    transition: all .3s;
 }
 #icons{
     background-image: url('../images/groupworkout.png');
@@ -300,21 +299,21 @@ table div{
     font-family: 'Abel';
     font-size: 1.2em;
 }
-#timetable{
+/* #timetable{
     background-image: url('/images/classesbg.png');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-attachment: fixed;
-}
+} */
 
 /* Offers */
 
-#offers{
+/* #offers{
     background-image: url('/images/bggym.png');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 /* Contact - google map */
 
@@ -332,22 +331,22 @@ table div{
     width:100%;
     position:absolute;
 }
-#contact{
+/* #contact{
     background-image: url('/images/ropes.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 /* Team */
 
-#team{
+/* #team{
     background-image: url('/images/bggym3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 /* Gallery */
 
@@ -398,27 +397,29 @@ footer{
 #multisportImg{
     width: 160px;
     height: 36px;
-    background-image: url('/images/multisport.png');
+    background-image: url('../images/multisport.png');
 }
 #multisportImg:hover{
-    background-image: url('/images/multisport-orange.png');
+    background-image: url('../images/multisport-orange.png');
 }
 #benefitSystemsImg{
     width: 160px;
     height: 39px;
-    background-image: url('/images/benefitsystem.png')
+    background-image: url('../images/benefitsystem.png')
 }
 #benefitSystemsImg:hover{
-    background-image: url('/images/benefitsystem-orange.png');
+    background-image: url('../images/benefitsystem-orange.png');
 }
 #okSystemImg{
     width: 160px;
     height: 34px;
-    background-image: url('/images/oksystem.png');
+    background-image: url('../images/oksystem.png');
 }
 #okSystemImg:hover{
-    background-image: url('/images/oksystem-orange.png');
+    background-image: url('../images/oksystem-orange.png');
 }
+
+
 /* Media queries */
 
 @media only screen and (max-width: 1366px){
@@ -470,25 +471,40 @@ footer{
     #smHours{
         display: none;
     }
-    table td:not(:nth-child(1)):not(:nth-child(2)){
+    table td:not(:nth-child(1)):not([data-day="monday"]){
         display: none;
     }
+    table td{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     table td:first-child{
-        width: 30%;
+        width: 20%;
     }
     .btnPreviousDay, .btnNextDay{
         display: block;
     }
     table div{
         justify-content: space-between;
-    }
-    table{
-        width: 80%;
-    }
+    }   
     table tbody td{
         height: 65px;
     }
     .contact-col{
         border-right: none !important;
+    }
+    .py-section{
+        padding: 50px 0px 50px 0px;
+    }
+    .py-section-100{
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape){
+    .navbar-nav{
+        display: block;
+    }
+    .nav-item{
+        display: inline-block;
     }
 }

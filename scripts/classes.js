@@ -1,30 +1,39 @@
 $(document).ready(function(){
+
     var dayOfWeek;
+    var numberOfDay;
+    var days = ['monday','thuesday','wednesday','thursday','friday','saturday','sunday'];
+
     // Show previous day on click
     $('.btnPreviousDay').click(function(){
-        dayOfWeek = $(this).closest('td').index()+1;
-        console.log(dayOfWeek);
-        dayOfWeek--;
-        if(dayOfWeek < 2){
-            dayOfWeek = 8;
+
+        dayOfWeek = $(this).closest('td').data('day');
+        numberOfDay = days.indexOf(dayOfWeek);
+
+        if(numberOfDay-1 < 0){
+            dayOfWeek = 'sunday';
+        } else{
+            dayOfWeek = days[numberOfDay-1];
         }
-        console.log(dayOfWeek);
-        // Hide all cells except the active one
-        $('table td:not(:nth-child(1)):not(:nth-child('+dayOfWeek+'))').hide();
-        $('table td:nth-child('+dayOfWeek+'):not(.empty)').show();
+
+        $('table td:not(:nth-child(1)').hide();
+        $('table td[data-day=' + dayOfWeek + ']').show();
+
     });
     // Show next day on click
     $('.btnNextDay').click(function(){
-        dayOfWeek = $(this).closest('td').index()+1;
-        console.log(dayOfWeek);
-        dayOfWeek++;
-        if(dayOfWeek > 8){
-            dayOfWeek = 2;
+
+        dayOfWeek = $(this).closest('td').data('day');
+        numberOfDay = days.indexOf(dayOfWeek);
+
+        if(numberOfDay+1 > 6){
+            dayOfWeek = 'monday';
+        } else{
+            dayOfWeek = days[numberOfDay+1];
         }
-        console.log(dayOfWeek);
-        // Hide all cells except the active one
-        $('table td:not(:nth-child(1)):not(:nth-child('+dayOfWeek+'))').hide();
-        $('table td:nth-child('+dayOfWeek+'):not(.empty)').show();
+
+        $('table td:not(:nth-child(1)').hide();
+        $('table td[data-day=' + dayOfWeek + ']').show();
     });
 
     // Multidemnsional object with classes details
