@@ -10,7 +10,7 @@ Projekt przedstawia fikcyjny klub fitness **Royal Gym**. Witryna została przygo
 
 * HTML5
 * CSS3
-* Botstrap 4
+* Bootstrap 4
 * jQuery
 * [AOS](https://michalsnik.github.io/aos/ "Animate On Scroll Library")
 
