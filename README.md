@@ -12,7 +12,7 @@
 
 * HTML5
 * CSS3
-* Botstrap 4
+* Bootstrap 4
 * jQuery
 * [AOS](https://michalsnik.github.io/aos/ "Animate On Scroll Library")
 
@@ -258,9 +258,14 @@ $('.btnPreviousDay').click(function(){
 
 ### W zakładce Team oraz Offer użyte zostały wyłącznie klasy *"Bootstapowe"* służące do płynnej zmiany rozmiaru zdjęć oraz uzyskania responsywności.
 
-## **2.5 Zakładka Contact**
+## **2.5 Zakładka Gallery**
+
+### W zakładce Team oraz Offer użyte zostały wyłącznie klasy *"Bootstapowe"* służące do płynnej zmiany rozmiaru zdjęć oraz uzyskania responsywności.
+
+## **2.6 Zakładka Contact**
 
 ### Podstrona Contact zawiera prosty formularz kontaktowy oraz mapę Google z wybranymi współrzędnymi. 
+
 
 <br>
 
